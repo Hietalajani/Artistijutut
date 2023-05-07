@@ -62,9 +62,6 @@ main {
 .logo {
     height: 5%;
 
-    display: flex;
-    gap: 4rem;
-
     position: absolute;
     bottom: 2rem;
     left: 10rem;
@@ -72,5 +69,7 @@ main {
 
 .logo img {
     height: 100%;
+
+    padding-inline: 1.5rem;
 
 }
