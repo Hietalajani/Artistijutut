@@ -57,8 +57,9 @@ h1 {
 }
 
 .logo {
-    height: 2%;
+    height: 3%;
     margin: auto;
+    padding-block: 2rem;
 
     text-align: center;
 }
@@ -83,6 +84,12 @@ h1 {
     font-size: 1.5rem;
 
     margin: 2rem;
+}
+
+@media screen and (min-width: 735px) and (max-width: 1078px) {
+    main {
+        height: 120vh;
+    }
 }
 
 @media screen and (min-width: 1079px) {
@@ -132,12 +139,14 @@ h1 {
     .main_article p {
         font-size: 1.1rem;
         color: var(--grayblue);
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
 
     .main_article button {
         width: 20rem;
         height: 5rem;
+
+        padding-block: 0;
 
         border: none;
         border-radius: 2.5rem;
@@ -167,5 +176,11 @@ h1 {
 
         padding-inline: 1.5rem;
 
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1078px) {
+    main {
+        height: 150vh;
     }
 }
